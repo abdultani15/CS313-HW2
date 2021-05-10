@@ -13,7 +13,9 @@ double prefixCalculator(string x) {
 		if (isdigit(x[i])) { //checks if char is a number
 			num = x[i] - '0'; //changes the char to the number
 			myStack.push(num); //pushes the num to the stack
-
+			if (myStack.isStackEmpty()) {
+			cout << "Not enough operands" << endl;
+		}
 		}
 		else { //else if it is not a number
 			double op2 = myStack.getTop(); //gets top from stack and sets it to op1
