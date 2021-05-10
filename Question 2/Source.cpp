@@ -16,12 +16,12 @@ double prefixCalculator(string x) {
 
 		}
 		else { //else if it is not a number
-			double op1 = myStack.getTop(); //gets top from stack and sets it to op1
+			double op2 = myStack.getTop(); //gets top from stack and sets it to op1
 			myStack.pop(); //pops the number out of the number
 			if (myStack.isStackEmpty()) {
 				cout << "Not enough operands " << endl;
 			}
-			double op2 = myStack.getTop();//gets top from stack and sets it to op2
+			double op1 = myStack.getTop();//gets top from stack and sets it to op2
 			myStack.pop(); //pops the number out of the number
 
 			switch (x[i]) { //switch case statement
